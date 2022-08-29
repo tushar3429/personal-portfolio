@@ -1,0 +1,221 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  #navbar {
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 2px 1px #6060602e;
+  }
+  
+  .log1 {
+    height: 50px;
+    margin-right: 100px;
+  }
+  
+  .logo {
+    display: inline-block;
+  }
+  
+  #navbar ul {
+    display: flex;
+    position: relative;
+    padding-left: 700px;
+  }
+  
+  #navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+  }
+  
+  #navbar ul li a{
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  
+  #navbar ul li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: red;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+  }
+  
+  #navbar ul li a:hover::after{
+    width:100%;
+    
+  }
+
+  .txt5 {
+    display: inline-block;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    top: 130px;
+    left: 650px;
+  }
+
+  .txt8 {
+    position: relative;
+    display: inline-block;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    top: 100px;
+    background-color: rgb(250, 246, 246);
+    height: 25px;
+    padding-top: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    left: 120px;
+    top: 350px;
+    box-shadow:  1px 1px 2px #6060603d;
+    transition: 0.6s;
+  }
+  .txt8:hover {
+   
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+  }
+  .txt9 {
+    position: relative;
+    display: inline-block;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    top: 100px;
+    background-color: rgb(250, 246, 246);
+    height: 25px;
+    padding-top: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    left: 300px;
+    top: 350px;
+    box-shadow:  1px 1px 2px #6060603d;
+    transition: 0.6s;
+  }
+  .txt9:hover {
+   
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+  }
+  .img9 {
+    display: inline-block;
+    position: absolute;
+    height: 20px;
+    top: 424px;
+    left: 400px;
+  }
+  .img10 {
+    display: inline-block;
+    position: absolute;
+    height: 25px;
+    top: 423px;
+    left: 890px;
+  }
+
+  .span1 {
+    color: red;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    #navbar ul li{
+    
+     text-align: centers;
+     display: none;
+   }
+ 
+     #navbar ul {
+       flex-direction: column;
+       width: 100%;
+     }
+     #navbar ul li a {
+       padding: .5rem 1rem;
+     }
+     #navbar {
+       flex-direction: column;
+       align-items: flex-start; }
+       
+       #navbar li.active {
+         display: flex;
+       }
+       .txt5 {
+        display: inline-block;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        top: 130px;
+        left: 50px;
+      }
+
+      .txt8 {
+        position: relative;
+        display: inline-block;
+        color: grey;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200;
+        top: 100px;
+        background-color: rgb(250, 246, 246);
+        height: 25px;
+        padding-top: 10px;
+        padding-left: 45px;
+        padding-right: 45px;
+        left: 25px;
+        top: 250px;
+        box-shadow:  1px 1px 2px #6060603d;
+        transition: 0.6s;
+      }
+      .txt8:hover {
+       
+        background-color: red;
+        color: white;
+        border-radius: 10px;
+      }
+      .txt9 {
+        position: relative;
+        display: inline-block;
+        color: grey;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200;
+        top: 100px;
+        background-color: rgb(250, 246, 246);
+        height: 25px;
+        padding-top: 10px;
+        padding-left: 45px;
+        padding-right: 45px;
+        left: 25px;
+        top: 300px;
+        box-shadow:  1px 1px 2px #6060603d;
+        transition: 0.6s;
+      }
+      .txt9:hover {
+       
+        background-color: red;
+        color: white;
+        border-radius: 10px;
+      }
+    .img9 {
+      display: none;
+    }
+
+    .img10 {
+      display: none;
+    }
+    }

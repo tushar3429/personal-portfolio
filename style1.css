@@ -1,0 +1,150 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  #navbar {
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 2px 1px #6060602e;
+  }
+  
+  .log1 {
+    height: 50px;
+    margin-right: 100px;
+  }
+  
+  .logo {
+    display: inline-block;
+  }
+  
+  #navbar ul {
+    display: flex;
+    position: relative;
+    padding-left: 700px;
+  }
+  
+  #navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+  }
+  
+  #navbar ul li a{
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  
+  #navbar ul li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: red;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+  }
+  
+  #navbar ul li a:hover::after{
+    width:100%;
+    
+  }
+
+  .txt5 {
+    display: inline;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: red;
+    top: 130px;
+    left: 20px;
+  }
+
+  .div1 {
+    display: inline-block;
+  }
+
+  .txt6 {
+    display: inline;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-weight: bold;
+    right: 230px;
+    top: 200px;
+  }
+
+  .img5 {
+display: inline-block;
+position: absolute;
+left: 750px;
+top: 120px;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    #navbar ul li{
+    
+     text-align: centers;
+     display: none;
+   }
+ 
+     #navbar ul {
+       flex-direction: column;
+       width: 100%;
+     }
+     #navbar ul li a {
+       padding: .5rem 1rem;
+     }
+     #navbar {
+       flex-direction: column;
+       align-items: flex-start; }
+       
+       #navbar li.active {
+         display: flex;
+       }
+       .log1 {
+         height: 50px;
+         margin-right:0;
+       }
+       
+       .logo {
+         display: inline-block;
+       }
+       .img5 {
+        display: inline-block;
+        position: absolute;
+        left: 0px;
+        height: 350px;
+        top: 80px;
+       }
+       .txt5 {
+        display: inline;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        color: red;
+        top: 390px;
+        left: 20px;
+      }
+      .txt6 {
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        font-size: 20px;
+        display: inline-block;
+        top: 400px;
+        font-weight: 200;
+        left: 20px;
+      }
+       
+    
+    }
